@@ -1,0 +1,171 @@
+* {
+    background-color: black;
+    color:white;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logomarca-1 {
+    width: auto;
+    height: 53px;
+    display: inline-block;
+}
+
+.bem-vindo {
+    font-family: 'Anta', sans-serif;
+    text-align: left;
+    margin-left: 300px;
+    font-size: 5rem;
+    margin-top: -4px;
+}
+
+.livo {
+    color: #52b9f4;
+}
+
+.texto-inicio {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 555px;
+    margin-top: -60px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.orcamento {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 490px;
+    height: 30px;
+    background: linear-gradient(to left,#062df6, #52b9f4);
+    padding: 10px 0;
+    border-radius: 15px;
+    line-height: 30px;
+}
+
+.orcamento svg {
+  background: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 3px;
+}
+
+.insta {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 490px;
+    height: 30px;
+    background: #212121;
+    padding: 10px 0;
+    border-radius: 15px;
+    line-height: 30px;
+}
+
+.insta svg {
+  background: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 3px;
+}
+
+.portfolio {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 490px;
+    height: 30px;
+    background: #212121;
+    padding: 10px 0;
+    border-radius: 15px;
+    line-height: 30px;
+}
+
+.portfolio svg {
+  background: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 3px;
+}
+
+.construcao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 65px;
+}
+
+.marca {
+    width: 30px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.site-construcao {
+    font-family: 'Anta', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.container {
+    background-color: red;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container {
+    height: auto;
+}
+
+.logomarca-2 {
+    width: 70px;
+    height: auto;
+    margin-top: 0px;
+}
+
+.final-site p, .rodape p {
+    margin: 5px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+html, body, footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+
