@@ -6,7 +6,8 @@
 .navbar {
     width: 100%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 70px;
+    padding-bottom: 80px;
 }
 
 .logomarca-1 {
@@ -18,7 +19,7 @@
 .bem-vindo {
     font-family: 'Anta', sans-serif;
     text-align: left;
-    margin-left: 300px;
+    margin-left: 710px;
     font-size: 5rem;
     margin-top: -4px;
 }
@@ -29,10 +30,9 @@
 
 .texto-inicio {
     font-family: 'Montserrat', sans-serif;
-    margin-left: 555px;
+    margin-left: 965px;
     margin-top: -60px;
     font-weight: 500;
-    margin-bottom: 60px;
 }
 
 .orcamento {
@@ -43,11 +43,17 @@
     margin: auto;
     text-align: center;
     width: 490px;
-    height: 30px;
+    height: 50px;
     background: linear-gradient(to left,#062df6, #52b9f4);
     padding: 10px 0;
     border-radius: 15px;
-    line-height: 30px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.orcamento:hover {
+    transform: scale(1.1);
 }
 
 .orcamento svg {
@@ -57,6 +63,7 @@
   width: 20px;
   height: 20px;
   margin-bottom: 3px;
+  margin-right: 7px;
 }
 
 .insta {
@@ -64,14 +71,22 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     display: block;
+    border: 2px solid transparent;
     margin: auto;
     text-align: center;
     width: 490px;
-    height: 30px;
+    height: 50px;
     background: #212121;
     padding: 10px 0;
     border-radius: 15px;
-    line-height: 30px;
+    line-height: 50px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.insta:hover {
+    background: linear-gradient(to left,#062df6, black);
+    border: 2px solid #52b9f4;
 }
 
 .insta svg {
@@ -81,6 +96,7 @@
   width: 30px;
   height: 30px;
   margin-bottom: 3px;
+  margin-right: 7px;
 }
 
 .portfolio {
@@ -91,11 +107,19 @@
     margin: auto;
     text-align: center;
     width: 490px;
-    height: 30px;
+    height: 50px;
     background: #212121;
     padding: 10px 0;
     border-radius: 15px;
-    line-height: 30px;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.4s;
+    border: 2px solid transparent;
+}
+
+.portfolio:hover {
+    background: linear-gradient(to left,#062df6, black);
+    border: 2px solid #52b9f4;
 }
 
 .portfolio svg {
@@ -105,67 +129,113 @@
   width: 20px;
   height: 20px;
   margin-bottom: 3px;
+  margin-right: 7px;
 }
 
 .construcao {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 25px;
     margin-top: 65px;
+    margin-bottom: 80px;
 }
 
 .marca {
     width: 30px;
     height: auto;
     display: block;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .site-construcao {
     font-family: 'Anta', sans-serif;
-    font-size: 20px;
-    margin: 0;
+    font-size: 28px;
+    margin-bottom: 50px;
 }
 
 .footer {
-    margin: 0;
-    padding: 0;
-    background: none;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 40px 220px;
 }
 
-.container {
-    background-color: red;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #1d1d1d;
 }
 
-.container {
-    height: auto;
+.footer-logo-texto {
+    max-width: 600px;
+    background-color: #1d1d1d;
 }
 
-.logomarca-2 {
-    width: 70px;
-    height: auto;
-    margin-top: 0px;
+.logo-footer {
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: #1d1d1d;
 }
 
-.final-site p, .rodape p {
-    margin: 5px 0;
+.frase-footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    background-color: #1d1d1d;
 }
 
-hr {
+.botao-transparente {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    padding: 20px 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-transparente:hover {
+    background-color: #52b9f4;
+    color: white;
+    border: #52b9f4;
+}
+
+.linha-footer {
     border: none;
-    border-top: 1px solid white;
-    margin: 20px 0;
+    border-top: 1px solid gray;
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #908f8f;
+    background-color: #1d1d1d
+}
+
+.coluna-footer {
+    background-color: #1d1d1d;
+}
+
+.coluna-footer p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 3px 0;
+    background-color: #1d1d1d;
+    font-weight: lighter;
 }
 
 html, body, footer {
     margin: 0;
     padding: 0;
 }
-
 
 
