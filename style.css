@@ -236,7 +236,7 @@ img, svg {
     max-width: 100% !important;
     padding: 0 10px !important;
     text-align: right !important;
-    margin-right: 10px;
+    margin-right: 0px;
   }
 
   .botoes-centro {
@@ -256,9 +256,10 @@ img, svg {
   }
 
   .bem-vindo {
-    font-size: 3.25rem!important;
+    font-size: 3.45rem!important;
     color: white;
     margin-top: -40px;
+    margin-left: 10px;
   }
 
   .construcao {
