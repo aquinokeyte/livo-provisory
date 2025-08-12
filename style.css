@@ -7,10 +7,16 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  background-image: url("img/Slide%2016_9%20-%202.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img, svg {
@@ -20,10 +26,6 @@ img, svg {
 
 /* Hero */
 .hero {
-  background-image: url("img/Slide%2016_9%20-%202.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -216,12 +218,19 @@ img, svg {
   font-family: 'Montserrat', sans-serif;
   margin: 3px 0;
   font-weight: lighter;
+  text-decoration: none;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+  body {
+    background-size: 100% auto !important;
+    background-position: top center !important;
+  }
+
   .hero {
-    background-position: center top !important;
+    background: transparent !important;
+    min-height: 400px;
     justify-content: flex-start;
     padding: 20px 15px !important;
     margin-top: -25px;
@@ -291,6 +300,4 @@ img, svg {
     font-size: 20px;
     margin-top: 60px;
   }
-
 }
-
