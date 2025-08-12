@@ -1,6 +1,6 @@
 * {
-    color: white;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
 }
 
 html, body {
@@ -9,317 +9,276 @@ html, body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    color: white;
-    box-sizing: border-box;
+img, svg {
+  max-width: 100%;
+  height: auto;
 }
 
-.hero * {
-    margin: 0;
-    
-}
-
+/* Hero */
 .hero {
-    background-image: url('img/Slide\ 16_9\ -\ 2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
-    flex-shrink: 0;
-    flex: 1 0 auto; 
+  background-image: url("img/Slide%2016_9%20-%202.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  flex: 1 0 auto;
 }
 
 .navbar {
-    width: 100%;
-    text-align: center;
-    padding-top: 70px;
-    padding-bottom: 80px;
+  width: 100%;
+  text-align: center;
+  padding: 70px 0 80px;
+  background-color: transparent;
 }
 
 .logomarca-1 {
-    width: auto;
-    height: 53px;
-    display: inline-block;
+  height: 53px;
+  display: inline-block;
+  margin-top: -40px;
 }
 
 .bem-vindo {
-    font-family: 'Anta', sans-serif;
-    text-align: start;
-    font-size: clamp(2rem, 5vw, 5rem);
-    margin: 0 auto 20px auto;
+  font-family: 'Anta', sans-serif;
+  text-align: start;
+  font-size: clamp(2rem, 6vw, 5rem);
+  margin: 0 auto 20px;
 }
 
 .livo {
-    color: #52b9f4;
+  color: #52b9f4;
 }
 
 .texto-inicio {
-    font-family: 'Montserrat', sans-serif;
-    text-align: end;
-    margin: 0 auto;
-    font-weight: 500;
-    max-width: 800px;
+  font-family: 'Montserrat', sans-serif;
+  text-align:end;
+  margin: 0 auto;
+  font-weight: 500;
+  max-width: 800px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 0 20px;
 }
 
 .botoes-centro {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .orcamento,
 .insta,
 .portfolio {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    display: block;
-    text-align: center;
-    width: 100%;
-    max-width: 490px;
-    height: 50px;
-    padding: 10px 0;
-    border-radius: 15px;
-    line-height: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  width: 90%;
+  max-width: 490px;
+  padding: 15px 0;
+  border-radius: 15px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.4;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .orcamento {
-    background: linear-gradient(to left,#062df6, #52b9f4);
+  background: linear-gradient(to left, #062df6, #52b9f4);
 }
 .orcamento:hover {
-    transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .orcamento svg,
 .insta svg,
 .portfolio svg {
-    background: transparent;
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 3px;
-    margin-right: 7px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
 }
 
-.insta {
-    background: #212121;
-    border: 2px solid transparent;
-}
-.insta:hover {
-    background: linear-gradient(to left,#062df6, black);
-    border: 2px solid #52b9f4;
-}
-.insta svg {
-    width: 30px;
-    height: 30px;
-}
-
+.insta,
 .portfolio {
-    background: #212121;
-    border: 2px solid transparent;
+  background: #212121;
+  border: 2px solid transparent;
 }
+.insta:hover,
 .portfolio:hover {
-    background: linear-gradient(to left,#062df6, black);
-    border: 2px solid #52b9f4;
+  background: linear-gradient(to left, #062df6, black);
+  border-color: #52b9f4;
 }
 
+.insta svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Construção */
 .construcao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 110px;
-    flex-wrap: wrap;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .marca {
-    width: 30px;
-    height: auto;
-    margin-bottom: 45px;
+  width: 40px;
+  margin-bottom: 20px;
 }
 
 .site-construcao {
-    font-family: 'Anta', sans-serif;
-    font-size: clamp(1.5rem, 3vw, 28px);
-    margin-bottom: 50px;
+  font-family: 'Anta', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 50px;
 }
 
+/* Footer */
 .footer {
-    background-image: url('img/footer\ livo\ bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 40px 190px;
+  background-image: url("img/footer%20livo%20bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 5%;
 }
 
 .footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .footer-logo-texto {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .logo-footer {
-    height: 50px;
-    margin-bottom: 15px;
+  height: 50px;
+  margin-bottom: 15px;
 }
 
 .frase-footer {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
 .botao-transparente {
-    font-family: 'Montserrat', sans-serif;
-    background-color: transparent;
-    border: 1.5px solid white;
-    border-radius: 50px;
-    padding: 15px 20px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .botao-transparente:hover {
-    background-color: #52b9f4;
-    color: white;
-    border-color: #52b9f4;
+  background-color: #52b9f4;
+  border-color: #52b9f4;
 }
 
 .linha-footer {
-    border: none;
-    border-top: 1px solid gray;
-    margin: 30px 0;
+  border: none;
+  border-top: 1px solid gray;
+  margin: 30px 0;
 }
 
 .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 14px;
-    color: #908f8f;
-    text-align: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #908f8f;
+  text-align: center;
+  gap: 1rem;
 }
 
 .coluna-footer p {
-    font-family: 'Montserrat', sans-serif;
-    margin: 3px 0;
-    font-weight: lighter;
+  font-family: 'Montserrat', sans-serif;
+  margin: 3px 0;
+  font-weight: lighter;
 }
 
 /* Responsividade */
-
-/* Ajuste para mobile */
 @media (max-width: 768px) {
-    .hero {
-        background-size: cover; /* mantém proporção */
-        background-position: top center; /* garante que o brilho apareça */
-        min-height: auto; /* deixa a altura depender do conteúdo */
-        justify-content: flex-start; /* começa no topo */
-    }
-
-    .bem-vindo {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-
-    .texto-inicio {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
-
-    .botoes-centro {
-        margin-top: 20px;
-        gap: 10px;
-    }
-}
-
-/* Ajuste extra para telas muito pequenas */
-@media (max-width: 480px) {
-    .hero {
-        gap: 0.5rem;
-    }
-
-    .bem-vindo {
-        margin-left: 61px;
-        font-size: 130px;
-    }
-
-    .logomarca-1 {
-        text-align: center;
-        margin: 0;
-    }
-
-
-    .texto-inicio {
-        font-size: 30px;
-        text-align: right;
-        margin-left: 430px;
-    }
-
-    .orcamento, .insta, .portfolio {
-    display: block;            
-    width: 90%;               
-    max-width: none;          
-    height: auto;             
-    padding: 30px 0;          
-    font-size: 50px;         
-    line-height: 1.1;        
-    border-radius: 15px;      
-    margin: 0 auto;           
-    text-align: center;    
-    margin-top: 40px;  
+  .hero {
+    background-position: center top !important;
+    justify-content: flex-start;
+    padding: 20px 15px !important;
   }
 
-  .site-construcao {
-    font-size: 40px;
-    padding-bottom: 90px;
+  .footer {
+    padding: 10px 20px;
   }
 
-  .marca {
-    width: 40px;
-    margin-bottom: 135px;
+  .texto-inicio {
+    font-size: 1.25rem;
+    max-width: 100% !important;
+    padding: 0 10px !important;
+    text-align: right !important;
+    margin-right: 10px;
   }
 
-  .orcamento svg,
-.insta svg, 
-.portfolio svg {
-    background: transparent !important;
-    display: inline-block !important;
-    vertical-align: middle !important;
-    width: 50px !important;
-    height: 50px !important;
-    max-width: 50px !important;
-    max-height: 50px !important;
-    margin-bottom: 3px !important;
-    margin-right: 7px !important;
-}
+  .botoes-centro {
+    width: 100% !important;
+    padding: 0 10px !important;
+    gap: 5px;
+  }
+
+  .orcamento,
+  .insta,
+  .portfolio {
+    width: 100% !important;
+    max-width: none !important;
+    font-size: 1.1rem !important;
+    padding: 22px 0 !important;
+  }
+
+  .bem-vindo {
+    font-size: 3.75rem!important;
+    color: white;
+  }
+
+  .construcao {
+    margin-top: 30px;
+  }
+
+  .logomarca-1 {
+    margin-top: -40px;
+    padding-top: 8px;
+  }
+
+  .logo-footer {
+    width: auto;
+    height: 30px;
+    margin-top: 80px;
+  }
+
+  .coluna-footer {
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
 
 }
+
