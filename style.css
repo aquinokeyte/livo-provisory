@@ -3,20 +3,27 @@
   color: white;
 }
 
-html, body {
+html {
   height: 100%;
   margin: 0;
   padding: 0;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background-image: url("img/Slide%2016_9%20-%202.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: top center;
-  background-color: black;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: url("img/Slide\ 16_9\ -\ 2.png");
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
 }
 
 img, svg {
@@ -24,19 +31,20 @@ img, svg {
   height: auto;
 }
 
-/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
   padding: 20px;
   width: 100%;
+  min-height: 100vh;
   flex: 1 0 auto;
 }
+
 
 .navbar {
   width: 100%;
   text-align: center;
-  padding: 70px 0 80px;
+  padding: 70px 0 55px;
   background-color: transparent;
 }
 
@@ -57,22 +65,21 @@ img, svg {
   color: #52b9f4;
 }
 
-.texto-inicio {
-  font-family: 'Montserrat', sans-serif;
-  text-align:end;
-  margin: 0 auto;
-  font-weight: 500;
-  max-width: 800px;
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  padding: 0 20px;
-}
-
-.botoes-centro {
-  margin-top: 50px;
+.botoes-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
+}
+
+.texto-inicio {
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+  font-weight: 500;
+  max-width: 490px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .orcamento,
@@ -85,7 +92,7 @@ img, svg {
   text-align: center;
   width: 90%;
   max-width: 490px;
-  padding: 15px 0;
+  padding: 20px 20px;
   border-radius: 15px;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.4;
@@ -125,13 +132,12 @@ img, svg {
   height: 30px;
 }
 
-/* Construção */
 .construcao {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
-  margin-top: 80px;
+  margin-top: 30px;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -221,7 +227,6 @@ img, svg {
   text-decoration: none;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   body {
     background-size: 100% auto !important;
@@ -248,10 +253,10 @@ img, svg {
     margin-right: 0px;
   }
 
-  .botoes-centro {
+  .botoes-container {
     width: 100% !important;
     padding: 0 10px !important;
-    gap: 10px;
+    gap: 30px;
   }
 
   .orcamento,
